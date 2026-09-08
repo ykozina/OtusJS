@@ -15,28 +15,28 @@ main {
     box-sizing: border-box;
 }
 
-h1 {
+.nav-logo {
     font-family: 'Playfair Display';
     font-size: 86px;
     line-height: 120%;
     font-weight: 600;
 }
 
-h2 {
+.biography-title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
 }
 
-h3 {
+.lead-designer-name {
     font-family: 'Playfair Display';
     font-size: 86px;
     line-height: 115%;
     font-weight: 500;
 }
 
-main {
+.page-content {
     width: 100%;
     max-width: 1205px;
     margin: 0 auto;
@@ -53,7 +53,7 @@ nav {
     align-items: center;
 }
 
-nav ul {
+.nav-menu {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -61,7 +61,7 @@ nav ul {
     align-items: center;
 }
 
-nav a {
+a.nav-link {
     font-family: 'Roboto';
     font-size: 24px;
     line-height: 110%;
@@ -75,27 +75,27 @@ nav a {
     border-radius: 10px;
 }
 
-nav .form-button {
+a.form-button {
     padding: 0;
 }
 
-nav a:hover {
+.nav-link:hover {
     text-decoration: underline;
 }
 
-nav a:active {
+.nav-link:active {
     color: #E0B59F;
 }
 
-nav a:focus {
+.nav-link:focus {
     border-color: #A07C72;
 }
 
-nav a:hover path {
+.nav-link:hover path {
     fill: #A07C72
 }
 
-nav a:active path {
+.nav-link:active path {
     fill: #E0B59F
 }
 
@@ -103,19 +103,19 @@ nav a:active path {
 
 /*---biography---*/
 
-section.biography {
+.biography {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-section.biography h2 {
+.biography-title {
     writing-mode: sideways-lr;
     align-self: flex-start;
     padding-left: 30px;
 }
 
-section.biography article {
+.biography article {
     display: flex;
     flex-direction: column;
     padding-left: 90px;
@@ -156,7 +156,7 @@ section.biography article {
 
 /*---designers---*/
 
-section.designers {
+.designers {
     padding-top: 60px;
     padding-bottom: 80px;
     display: flex;
@@ -165,23 +165,23 @@ section.designers {
     gap: 35px 55px;
 }
 
-section.designers h2 {
+.designers-title {
     padding-left: 120px;
     width: 100%;
 }
 
-section.designers article * {
+.about-designer * {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 19px;
 }
 
-section.designers article {
+.about-designer {
     display: flex;
     flex-direction: column;
 }
 
-section.designers article img {
+.about-designer img {
     padding-bottom: 24px;
 }
 
@@ -220,10 +220,14 @@ footer * {
     color: #FFFFFF;
 }
 
-footer a {
+.footer-link {
     text-decoration: underline;
     color: inherit;
     text-transform: uppercase;
+}
+
+.footer-socials-icon {
+    text-decoration: none;
 }
 
 .footer-socials {
