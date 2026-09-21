@@ -119,6 +119,7 @@ a.form-button {
 .list-skills {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .list-skills li:not(:last-child):after {
@@ -152,10 +153,16 @@ a.form-button {
 }
 
 .designers-title {
+    font-family: 'Roboto', sans-serif;
     padding-left: 120px;
     box-sizing: border-box;
     width: 100%;
     grid-column: span 3;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+
 }
 
 .about-designer * {
@@ -175,6 +182,9 @@ a.form-button {
 
 .about-designer img {
     padding-bottom: 24px;
+    width: 100%;
+    height: 475px;
+    object-fit: cover;
 }
 
 .designer-name {
@@ -192,6 +202,7 @@ a.form-button {
 
 .designer-skills {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /*---footer---*/
@@ -202,6 +213,7 @@ footer {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -226,4 +238,164 @@ footer {
     display: flex;
     gap: 25px;
     align-items: center;
+}
+
+/*---media query---*/
+
+@media(max-width: 767px) {
+
+    .nav-logo,
+    a.nav-link span,
+    .biography .list-skills li::after,
+    .designer-quote::before,
+    .lead-designer-name br {
+        display: none;
+    }
+
+    .nav-menu {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    a.nav-link {
+        font-family: 'Bitter';
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+    main {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .biography {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .biography-title {
+        order: 1;
+        align-self: flex-end;
+
+        writing-mode: initial;
+        padding-left: 0;
+        padding-right: 16px;
+
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: right;
+
+        margin-bottom: -16px;
+    }
+
+    .biography article {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 56px;
+
+    }
+
+    .biography-photo {
+        order: 3;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .designer-description {
+        order: 1;
+    }
+
+    .biography .list-skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biography .list-skills li {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .biography .list-skills li::before {
+        content: '\2005-\2005';
+    }
+
+    .biography .designer-quote {
+        order: 2;
+        font-family: Bitter;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+        max-width: 600px;
+    }
+
+    .lead-designer-name::before {
+        content: '-';
+    }
+
+    .lead-designer-name {
+        order: 3;
+        padding-top: 56px;
+        padding-bottom: 36px;
+
+        font-family: Playfair Display;
+        font-weight: 400;
+        font-size: 64px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .designers {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .designers-title {
+        grid-column: 1;
+    }
+
+    .about-designer {
+        grid-column: 1;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .about-designer img {
+        width: 100%;
+        max-width: 258px;
+        height: 313px;
+        object-position: center bottom;
+    }
+
+    .about-designer:nth-of-type(2n+1) {
+        grid-column: 1;
+        flex-direction: row;
+    }
+
+    .designer-info {
+        flex-grow: 1;
+        padding: 40px 32px 0 32px;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
 }

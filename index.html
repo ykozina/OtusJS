@@ -10,7 +10,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
@@ -19,9 +20,9 @@
         <nav>
             <h1 class="nav-logo">Mod</h1>
             <ul class="nav-menu">
-                <li><a class="nav-link" href="#">Designers</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#">Contacts</a></li>
+                <li><a class="nav-link" href="#">D<span>esigners</span></a></li>
+                <li><a class="nav-link" href="#">A<span>bout</span></a></li>
+                <li><a class="nav-link" href="#">C<span>ontacts</span></a></li>
                 <li><a class="nav-link form-button" href="#">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -37,7 +38,8 @@
         <!--biography section-->
         <section class="biography">
             <!--Временно задаю изображениям ширину через отдельный атрибут, так как выгружаю фото для проекта в разрешении x2 (рекомендованный размер для лучшего отображения на мониторах retina)-->
-            <img src="img/katya-mills-img.jpg" width="571" alt="photo of art director Katya Mills">
+            <img class="biography-photo" src="img/katya-mills-img.jpg" width="571"
+                alt="photo of art director Katya Mills">
             <h2 class="biography-title">Biography</h2>
             <article>
                 <h3 class="lead-designer-name">Katya <br>Mills</h3>
@@ -62,51 +64,59 @@
             <article class="about-designer">
                 <img src="img/jess-wonder-2-img.jpg" width="740" alt="photo of Jess Wonder">
                 <!--Все имена будет переводиться в заглавные буквы на этапе подключения CSS к проекту через свойство text-transform-->
-                <p class="designer-name">Jess Wonder</p>
-                <!--Начало строки оборачиваю в span вместо strong для более корректной стилизации на этапе подключения CSS к проекту; слэш в конце заголовка для упрощения будет добавляться через псевдоэлемент after-->
-                <p><span class="designer-about-title">From</span> Be more flower</p>
-                <div class="designer-skills">
-                    <span class="designer-about-title">Skills</span>
-                    <ul class="list-skills">
-                        <li>Design Strategy</li>
-                        <li>Marketing</li>
-                    </ul>
+                <div class="designer-info">
+                    <p class="designer-name">Jess Wonder</p>
+                    <!--Начало строки оборачиваю в span вместо strong для более корректной стилизации на этапе подключения CSS к проекту; слэш в конце заголовка для упрощения будет добавляться через псевдоэлемент after-->
+                    <p><span class="designer-about-title">From</span> Be more flower</p>
+                    <div class="designer-skills">
+                        <span class="designer-about-title">Skills</span>
+                        <ul class="list-skills">
+                            <li>Design Strategy</li>
+                            <li>Marketing</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
             <article class="about-designer">
                 <img src="img/cameron-clein-img.jpg" width="370" alt="photo of Kameron Clein">
-                <p class="designer-name">Kameron Clein</p>
-                <p><span class="designer-about-title">From</span> Be more flower</p>
-                <div class="designer-skills">
-                    <span class="designer-about-title">Skills</span>
-                    <ul class="list-skills">
-                        <li>Design Strategy</li>
-                        <li>Marketing</li>
-                    </ul>
+                <div class="designer-info">
+                    <p class="designer-name">Kameron Clein</p>
+                    <p><span class="designer-about-title">From</span> Be more flower</p>
+                    <div class="designer-skills">
+                        <span class="designer-about-title">Skills</span>
+                        <ul class="list-skills">
+                            <li>Design Strategy</li>
+                            <li>Marketing</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
             <article class="about-designer">
                 <img src="img/louisse-red-img.jpg" width="370" alt="photo of Louisse Red">
-                <p class="designer-name">Louisse Red</p>
-                <p><span class="designer-about-title">From</span> Be more flower</p>
-                <div class="designer-skills">
-                    <span class="designer-about-title">Skills</span>
-                    <ul class="list-skills">
-                        <li>Design Strategy</li>
-                        <li>Marketing</li>
-                    </ul>
+                <div class="designer-info">
+                    <p class="designer-name">Louisse Red</p>
+                    <p><span class="designer-about-title">From</span> Be more flower</p>
+                    <div class="designer-skills">
+                        <span class="designer-about-title">Skills</span>
+                        <ul class="list-skills">
+                            <li>Design Strategy</li>
+                            <li>Marketing</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
             <article class="about-designer">
                 <img src="img/jess-wonder-2-img.jpg" width="740" alt="photo of Jess Wonder">
-                <p class="designer-name">Jess Wonder</p>
-                <p><span class="designer-about-title">From</span> Be more flower</p>
-                <div class="designer-skills">
-                    <span class="designer-about-title">Skills</span>
-                    <ul class="list-skills">
-                        <li>Design Strategy</li>
-                        <li>Marketing</li>
-                    </ul>
+                <div class="designer-info">
+                    <p class="designer-name">Jess Wonder</p>
+                    <p><span class="designer-about-title">From</span> Be more flower</p>
+                    <div class="designer-skills">
+                        <span class="designer-about-title">Skills</span>
+                        <ul class="list-skills">
+                            <li>Design Strategy</li>
+                            <li>Marketing</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
         </section>
