@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <script src="js/modal.js" defer></script>
 </head>
 
 <body>
@@ -166,6 +168,47 @@
             © 2023 Mod Media. All rights reserved
         </div>
     </footer>
+
+    <div class="popup">
+        <div class="popup-content">
+            <div class="main-form">
+                <h3 class="form-title">Get in touch</h3>
+                <div class="form-info">
+                    Do you have any questions? Have something to say?
+                    Don't be shy, write to us:
+                </div>
+                <form id="cta-form" name="user_form">
+                    <div class="form-input">
+                        <label for="user_name">Name</label>
+                        <div class="input-icon icon-name">
+                            <input type="text" class="form-name" id="form-name" name="user_name"
+                                placeholder="3+ Characters" required>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="user_email">E-mail</label>
+                        <div class="input-icon icon-email">
+                            <input type="email" class="form-email" id="form-email" name="user_email"
+                                placeholder="name@email.com">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="comment">Comment</label>
+                        <div class="input-icon icon-comment">
+                            <textarea id="comment" name="comment" rows="3" cols="33"
+                                placeholder="Some text..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button class="form-button-cancel" type="reset">Cancel</button>
+                        <button class="form-button-send" type="submit">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
