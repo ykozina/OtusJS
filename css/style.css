@@ -112,6 +112,7 @@ a.form-button {
 .biography-photo {
     width: 100%;
     max-width: 571px;
+    align-self: flex-start;
 }
 
 .designer-description * {
@@ -469,14 +470,18 @@ textarea:focus {
 
 /*---media query---*/
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
 
-    .nav-logo,
     a.nav-link span,
     .biography .list-skills li::after,
     .designer-quote::before,
     .lead-designer-name br {
         display: none;
+    }
+
+    .nav-logo {
+        visibility: hidden;
+        position: absolute;
     }
 
     .nav-menu {
