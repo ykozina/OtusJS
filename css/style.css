@@ -76,7 +76,9 @@ a.form-button {
 }
 
 .nav-link:focus {
-    border-color: #A07C72;
+    outline: solid #E0B59F 1px;
+    color: #A07C72;
+    text-decoration: none;
 }
 
 .nav-link:hover path {
@@ -235,9 +237,33 @@ footer {
     text-transform: uppercase;
 }
 
+.footer-link:hover {
+    color: #A07C72;
+}
+
+.footer-link:active {
+    color: #E0B59F;
+}
+
 .footer-socials-icon {
     text-decoration: none;
 }
+
+.footer-socials-icon:hover path {
+    fill: #A07C72;
+}
+
+.footer-socials-icon:active path,
+.footer-socials-icon:focus path {
+    fill: #E0B59F;
+}
+
+.footer-socials-icon:focus svg {
+    outline: solid #E0B59F 1px;
+    outline-offset: 8px;
+    border-radius: 1px;
+}
+
 
 .footer-socials {
     list-style: none;
@@ -532,8 +558,15 @@ textarea:focus {
 
     }
 
-    .biography-photo {
+    .biography-photo-wrapper {
         order: 3;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .biography-photo {
+        width: 100%;
         max-width: 100%;
         height: 400px;
         object-fit: cover;
